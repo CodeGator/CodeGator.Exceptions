@@ -7,6 +7,8 @@
     <Description>Exception types used by other CodeGator solutions</Description>
     <PackageIcon>packageDefaultIcon-128x128.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/CodeGator/CodeGator.Exceptions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/CodeGator/CodeGator.Exceptions</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
