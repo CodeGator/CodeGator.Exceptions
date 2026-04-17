@@ -1,13 +1,17 @@
 namespace CodeGator.Exceptions.UnitTests;
 
 /// <summary>
-/// Verifies constructor behavior for all <see cref="CodeGator.Exceptions"/> exception types.
+/// This class verifies constructor behavior for CodeGator exception types.
 /// </summary>
+/// <remarks>
+/// Exercises each concrete exception type in this package using
+/// <see cref="DynamicDataAttribute"/> rows from <see cref="ExceptionTypes"/>.
+/// </remarks>
 [TestClass]
 public sealed class ExceptionConstructorTests
 {
     /// <summary>
-    /// Exception types under test (one row per type for <see cref="DynamicDataAttribute"/>).
+    /// This property supplies exception types used as rows for dynamic test data.
     /// </summary>
     public static IEnumerable<object[]> ExceptionTypes =>
     [
@@ -22,9 +26,9 @@ public sealed class ExceptionConstructorTests
     ];
 
     /// <summary>
-    /// Parameterless constructor yields an instance of the concrete exception type.
+    /// This method verifies parameterless construction returns the expected type.
     /// </summary>
-    /// <param name="exceptionType">The exception type to construct.</param>
+    /// <param name="exceptionType">The concrete exception type to construct.</param>
     [TestMethod]
     [DynamicData(nameof(ExceptionTypes))]
     public void Parameterless_ctor_creates_instance_of_expected_type(Type exceptionType)
@@ -37,9 +41,12 @@ public sealed class ExceptionConstructorTests
     }
 
     /// <summary>
-    /// <c>(string message)</c> constructor sets <see cref="Exception.Message"/>.
+    /// This method verifies the message-only constructor sets Exception.Message.
     /// </summary>
-    /// <param name="exceptionType">The exception type to construct.</param>
+    /// <remarks>
+    /// Calls the <c>(string message)</c> constructor and compares <see cref="Exception.Message"/>.
+    /// </remarks>
+    /// <param name="exceptionType">The concrete exception type to construct.</param>
     [TestMethod]
     [DynamicData(nameof(ExceptionTypes))]
     public void Message_ctor_sets_Message(Type exceptionType)
@@ -52,9 +59,13 @@ public sealed class ExceptionConstructorTests
     }
 
     /// <summary>
-    /// <c>(string message, Exception innerException)</c> sets message and inner exception.
+    /// This method verifies message-plus-inner construction assigns both members.
     /// </summary>
-    /// <param name="exceptionType">The exception type to construct.</param>
+    /// <remarks>
+    /// Calls <c>(string message, Exception innerException)</c> and checks
+    /// <see cref="Exception.Message"/> and <see cref="Exception.InnerException"/>.
+    /// </remarks>
+    /// <param name="exceptionType">The concrete exception type to construct.</param>
     [TestMethod]
     [DynamicData(nameof(ExceptionTypes))]
     public void Message_and_inner_ctor_sets_Message_and_InnerException(Type exceptionType)

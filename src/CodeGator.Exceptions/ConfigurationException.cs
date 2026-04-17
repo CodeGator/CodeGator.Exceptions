@@ -6,26 +6,16 @@ namespace CodeGator.Exceptions;
 /// </summary>
 public class ConfigurationException : Exception
 {
-    // *******************************************************************
-    // Constructors.
-    // *******************************************************************
-
-    #region Constructors
-
     /// <summary>
-    /// This constructor creates a new instance of the <see cref="ConfigurationException"/>
-    /// class.
+    /// This constructor initializes a new instance of the <see cref="ConfigurationException"/> class.
     /// </summary>
     public ConfigurationException()
     {
 
     }
 
-    // *******************************************************************
-
     /// <summary>
-    /// This constructor creates a new instance of the <see cref="ConfigurationException"/>
-    /// class.
+    /// This constructor initializes a new instance of the <see cref="ConfigurationException"/> class.
     /// </summary>
     /// <param name="message">The message to use for the exception.</param>
     /// <param name="innerException">An optional inner exception reference.</param>
@@ -37,11 +27,8 @@ public class ConfigurationException : Exception
 
     }
 
-    // *******************************************************************
-
     /// <summary>
-    /// This constructor creates a new instance of the <see cref="ConfigurationException"/>
-    /// class.
+    /// This constructor initializes a new instance of the <see cref="ConfigurationException"/> class.
     /// </summary>
     /// <param name="message">The message to use for the exception.</param>
     public ConfigurationException(
@@ -51,5 +38,4 @@ public class ConfigurationException : Exception
 
     }
 
-    #endregion
 }

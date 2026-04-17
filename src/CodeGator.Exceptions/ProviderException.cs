@@ -6,26 +6,16 @@ namespace CodeGator.Exceptions;
 /// </summary>
 public class ProviderException : Exception
 {
-    // *******************************************************************
-    // Constructors.
-    // *******************************************************************
-
-    #region Constructors
-
     /// <summary>
-    /// This constructor creates a new instance of the <see cref="ProviderException"/>
-    /// class.
+    /// This constructor initializes a new instance of the <see cref="ProviderException"/> class.
     /// </summary>
     public ProviderException()
     {
 
     }
 
-    // *******************************************************************
-
     /// <summary>
-    /// This constructor creates a new instance of the <see cref="ProviderException"/>
-    /// class.
+    /// This constructor initializes a new instance of the <see cref="ProviderException"/> class.
     /// </summary>
     /// <param name="message">The message to use for the exception.</param>
     /// <param name="innerException">An optional inner exception reference.</param>
@@ -37,11 +27,8 @@ public class ProviderException : Exception
 
     }
 
-    // *******************************************************************
-
     /// <summary>
-    /// This constructor creates a new instance of the <see cref="ProviderException"/>
-    /// class.
+    /// This constructor initializes a new instance of the <see cref="ProviderException"/> class.
     /// </summary>
     /// <param name="message">The message to use for the exception.</param>
     public ProviderException(
@@ -51,5 +38,4 @@ public class ProviderException : Exception
 
     }
 
-    #endregion
 }

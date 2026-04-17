@@ -6,26 +6,16 @@ namespace CodeGator.Exceptions;
 /// </summary>
 public class ApiException : Exception
 {
-    // *******************************************************************
-    // Constructors.
-    // *******************************************************************
-
-    #region Constructors
-
     /// <summary>
-    /// This constructor creates a new instance of the <see cref="ApiException"/>
-    /// class.
+    /// This constructor initializes a new instance of the <see cref="ApiException"/> class.
     /// </summary>
     public ApiException()
     {
 
     }
 
-    // *******************************************************************
-
     /// <summary>
-    /// This constructor creates a new instance of the <see cref="ApiException"/>
-    /// class.
+    /// This constructor initializes a new instance of the <see cref="ApiException"/> class.
     /// </summary>
     /// <param name="message">The message to use for the exception.</param>
     /// <param name="innerException">An optional inner exception reference.</param>
@@ -37,11 +27,8 @@ public class ApiException : Exception
 
     }
 
-    // *******************************************************************
-
     /// <summary>
-    /// This constructor creates a new instance of the <see cref="ApiException"/>
-    /// class.
+    /// This constructor initializes a new instance of the <see cref="ApiException"/> class.
     /// </summary>
     /// <param name="message">The message to use for the exception.</param>
     public ApiException(
@@ -51,5 +38,4 @@ public class ApiException : Exception
 
     }
 
-    #endregion
 }
